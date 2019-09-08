@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import datetime
 
 def make_dataset(df, time_lags=5) :
     df_lag = pd.DataFrame(index=df.index)
@@ -23,7 +24,7 @@ def split_dataset(df, input_column_array, output_column, split_ratio) :
     x_train = df[input_column_array][df[input_column_array].index < split_date]
     x_test = df[input_column_array][df[input_column_array].index >= split_date]
     y_train = df[output_column][df[output_column].index < split_date]
-    y_test = df[output_column][df[output_column] >= split_date]
+    y_test = df[output_column][df[output_column].index >= split_date]
     
     return x_train, x_test, y_train, y_test
 
