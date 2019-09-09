@@ -1,3 +1,8 @@
 # 2019_Autumn_Algorithm_Trading
 
-[파이썬을 배우는 알고리즘 트레이딩](https://wikidocs.net/book/110)
+
+## References
+[파이썬으로 배우는 알고리즘 트레이딩](https://wikidocs.net/book/110)
+머신러닝을 통한 알고리즘 트레이딩 시스템 개발  
+알고리즘 트레이딩 1, 2, 3. 
+딥러닝/강화학습 주식투자. 
