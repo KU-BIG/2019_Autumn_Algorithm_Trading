@@ -9,6 +9,8 @@
 
 딥러닝/강화학습 주식투자
 
+[파이썬을 활용한 금융분석](https://github.com/yhilpisch/py4fi)
+
 ## Solve Windows Dependency
 
 [docker의 ubuntu container에 ssh로 접속하기](https://chanhy63.tistory.com/11)
