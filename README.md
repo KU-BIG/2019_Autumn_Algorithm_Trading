@@ -11,6 +11,15 @@
 
 [파이썬을 활용한 금융분석](https://github.com/yhilpisch/py4fi)
 
+[Machine Learning for Trading](https://www.udacity.com/course/machine-learning-for-trading--ud501?fbclid=IwAR2RoifzVV6CEq4aQKDULRWJHzHVsCFqn19WGdO-Nc6E27gl9e-KHCPAvlg)
+
+[무료 e-러닝 강좌 머신러닝을 이용한 주식 트레이딩](https://www.facebook.com/groups/TensorFlowKR/permalink/416809878660076/)
+
+[딥러닝을 적용한 트레이딩 기술](https://smallake.kr/?p=18999)
+
+[딥러닝 트레이딩 시스템을 위한 설계](https://juliuschun.com/2017/08/03/딥러닝-트레이딩-시스템을-위한-설계/)
+
+
 ## Solve Windows Dependency
 
 [docker의 ubuntu container에 ssh로 접속하기](https://chanhy63.tistory.com/11)
