@@ -112,11 +112,30 @@ gpu instance - kubig wiki 보고 했음
 
       
 
+
+## GPU 서버 내 파이썬 환경 세팅
+
+- Jupyter lab 사용가능한 환경 만들기    
+
   
 
-## ETC  
+  pip 설치 명령어
+
+  ```
+  sudo apt install python-pip
+  ```
+
+  [참조](<https://quiet-time.tistory.com/64>)  
+
+  config파일생성해서 c.NotebookApp 이거 또 해줘야함.. (옛날에 했던거)   
+
+  
+
+- 데이터 코드, 백테스팅, 트레이딩 전략(ex. WANN)  
 
 
+
+## ETC
 
 - 파일 보내는 명령어 __rsync__   
 
