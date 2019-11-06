@@ -32,7 +32,7 @@ python 버전 안맞으면 쓰기 힘들다함 -> 안쓰기로 함
 
 ### Backtesting.py
 
-[Link]([https://kernc.github.io/backtesting.py/doc/examples/Strategies%20Library.html](https://kernc.github.io/backtesting.py/doc/examples/Strategies Library.html))  
+[Link](https://kernc.github.io/backtesting.py/doc/examples/Strategies%20Library.html)   
 
 일단 가벼움
 
