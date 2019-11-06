@@ -18,7 +18,7 @@ __Backtesting__ = Back(과거 데이터를 사용) + Testing(알고리즘을 테
 
 
 
-전략 예시: 모멘텀 전략 등
+전략 예시: 모멘텀 전략, moving_average 전략 등      
 
 
 
@@ -41,6 +41,12 @@ multiple timeframe에 쓰일 수 있음
 vectorized 나 event-based backtesting 모두에 쓰일 수 있음. 
 
 cf) event-based backtesting -> recieves a data feed, or __"events"__, which trigger the algorithm to respond in real time  
+
+
+
+input : 과거 데이터의 주가랑 모델(트레이딩 전략, 만약 WANN을 쓴다면 WANN이 전략이 되겠음)  
+
+output: 수익률 , 등등,,, 
 
 
 

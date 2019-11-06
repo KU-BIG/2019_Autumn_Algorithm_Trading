@@ -1,5 +1,7 @@
 ## Google Cloud Platform (GCP) 세팅
 
+
+
 계정만들기
 
 VM 인스턴스 생성하기 - cpu, gpu 둘 다 했음  
@@ -10,7 +12,7 @@ gpu 신청하기 - 승인됨
 
   코인 300달러 다 썼을 때 -> 계정 새로 만들고 (ex.lsh9382_2@gmail.com) 이 계정에서 프로젝트 권한 추가를 본 메일(lsh9382@gmail.com) 으로 할 것 -> lsh9382@gmail.com 계정에서 lsh9382_2@gmail.com에서 생성한 인스턴스에 접근할 수 있다.   
 
-  
+
 
 ## SSH 접속 환경 세팅
 
@@ -110,28 +112,20 @@ gpu instance - kubig wiki 보고 했음
 
       
 
-- 파일 보내는 명령어 rsync
+  
+
+## ETC  
+
+
+
+- 파일 보내는 명령어 __rsync__   
 
   변한 부분만 복사해주는 명령어  
 
   [참조](<https://twpower.github.io/153-copy-files-using-rsync-command>)      
 
   ```
-  rsync
+  rsync  
   ```
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-​     
