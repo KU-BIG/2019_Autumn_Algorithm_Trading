@@ -38,7 +38,7 @@ weight를 학습하는 것이 아니라, 구조를 학습하는 것
 
 
 
-![](C:\Users\USER\Documents\GitHub\2019_Autumn_Algorithm_Trading\WANN\image2.png) 
+![](image2.png)  
 
 
 
@@ -62,7 +62,7 @@ Middle: 네트워크 구조는 다음 세 가지 방법들 중 하나에 의하�
 
 
 
-![](C:\Users\USER\Documents\GitHub\2019_Autumn_Algorithm_Trading\WANN\image8.png)   
+![](image8.png)   
 
 
 
