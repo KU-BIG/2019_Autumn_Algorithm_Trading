@@ -92,7 +92,7 @@ __The Search for these weight agnostic neural networks(WANNs)__
 
 
 
-![](image8.png)     
+![](image8.png)        
 
 1) An initial Population of minimal neural network topologies is created
 

@@ -56,7 +56,7 @@ Middle: 네트워크 구조는 다음 세 가지 방법들 중 하나에 의하�
 
 또한 중요한 것은 필요한 만큼만 복잡한 네트워크 아키텍처를 찾는 것이 중요하다는 것이다. 
 
-따라서 네트워크의 __performance__과 __complexity__를 동시에 최적화 해야 할 것임  
+따라서 네트워크의 __performance__ 과 __complexity__ 를 동시에 최적화 해야 할 것임  
 
 이때 multi-objective optimization에서 파생된 techniques를 이용함    
 
