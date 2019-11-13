@@ -92,7 +92,7 @@ __The Search for these weight agnostic neural networks(WANNs)__
 
 
 
-![](C:\Users\USER\Documents\GitHub\2019_Autumn_Algorithm_Trading\WANN\image8.png)    
+![](image8.png)     
 
 1) An initial Population of minimal neural network topologies is created
 
