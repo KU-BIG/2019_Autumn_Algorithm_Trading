@@ -98,7 +98,7 @@ __The Search for these weight agnostic neural networks(WANNs)__
 
 2) each network is evaluated over multiple rollouts, with a different shared weight value assigned to each rollout  
 
-3) networks are ranked according to their performance and __complexity__    
+3) networks are ranked according to their __performance__  and __complexity__      
 
 4) new population is created by varing the highest ranked network topologies, chosen probabilistically through tournament selection   
 
@@ -118,7 +118,69 @@ topological search operators에만 집중( architecture에만 집중했단 뜻 )
 
 
 
+![](image2.png)  
 
 
- 
+
+시작: connection이 거의 없고, hidden nodes 없이 input nodes와 output node 만 있는 상태에서 시작함   
+
+네트워크 구조를 변형시키는 3가지 방법: Insert Node, Add Connection, Change Activation  
+
+-  Insert Node: connection을 둘로 쪼갬 (single shared parameter value이기 때문에 weight 값은 그냥 이전과 동일함 )  
+- Add Connection: 이전에 연결되어 있지 않던 두 노드를 이음.  
+- Change Activation: hidden nodes에 랜덤하게 activation function 할당   ex) linear, sigmoid, ReLU, Gaussian, sinusoid, step 등   
+
+
+
+__Performance and Complexity__   
+
+각 rollout에서는 모든 connection에 대해서 같은 weight값을 가짐. 대신 여러 개의 rollouts를 이용해서
+
+네트워크 구조를 평가하였음.  
+
+본 논문의 실험에서는 evaluations 사이의 variance를 감소시키기 위하여, 5가지의 고정된! weights 를 사용하였음 = [-2, -1, -0.5, +0.5, +1, +2]   
+
+이 5가지의 다른 weight values를 사용한 모든 rollouts에 대한, cumulative reward를 평균냄으로써 네트워크의 mean performance를 계산하였음.   
+
+
+
+만약에 비슷한 performance를 내는 두개의 다른 networks가 있따면, 우리는 둘 중 simpler network(network size가 작은것)를 더 선호함.     
+
+__population(네트워크 구조들) 내에서 ranking을 할 때, performance 뿐 만 아니라 size of network도 고려해야 함__     
+
+ranking시? 3가지 평가 기준 - 1)mean performance over all weight values, max performance of the single best weight value, number of connections in the network    
+
+
+
+performance를 올리다 보면 어쩔 수 없이 complexity가 증가하게 되는데, complexity를 줄이는 걸 너무 과도하게 고려하다 보면 구조적으로 많은 변형이 이루어져야 하기 때문에, 이것은 이루어지기 어려움.   
+
+그래서 적당히 complexity 감소를 고려하는 방안으로, 오직 확률적으로 complexity를 랭킹하고자 하였음
+
+: 80%는 mean performance와 number of connections를 이용해서 ranking하고, 20%는 mean performance와 max performance를 활용하여 랭킹한다.       
+
+
+
+#### 4 Experiment Results       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
