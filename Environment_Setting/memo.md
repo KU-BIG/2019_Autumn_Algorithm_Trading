@@ -42,7 +42,7 @@ vim ~/.ssh/config
 
 i를 눌러 편집 모드로 전환
 
-#### 2. Host 등록하기 -> private key 해결 아직 안됐음  
+#### 2. Host 등록하기 -> private key 해결 아직 안됐음  + 외부 IP 계속 바뀌는 문제  
 
 [참조](<https://stackoverflow.com/questions/49528663/gcp-vms-ssh-config-file>)   
 
@@ -111,6 +111,8 @@ gpu instance - kubig wiki 보고 했음
      Docker에서 빠져나오려면 __Ctrl + D__   
 
       
+     
+     
 
 
 ## GPU 서버 내 파이썬 환경 세팅
@@ -125,17 +127,70 @@ gpu instance - kubig wiki 보고 했음
   sudo apt install python-pip
   ```
 
-  [참조](<https://quiet-time.tistory.com/64>)  
+  [참조1](<https://quiet-time.tistory.com/64>)    
+
+  [참조2](<https://shwksl101.github.io/gcp/2018/12/23/gcp_vm_custom_setting.html>)   
 
   config파일생성해서 c.NotebookApp 이거 또 해줘야함.. (옛날에 했던거)   
 
+  ```
+  wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+  
+  bash Anaconda3-4.2.0-Linux-x86_64.sh
+  
+  vi .bashrc #설치 후 안내되는 파이썬 경로를 .bashrc에 추가  
+  ```
+
+  ```
+  #아래에 그 파이썬 경로 있는데 밑에 PATH yes 라고 하면 경로 알아서 지정되는듯? 
+  
+  installation finished.
+  Do you wish the installer to prepend the Anaconda3 install location
+  to PATH in your /home/lsh9382/.bashrc ? [yes|no]
+  [no] >>> yes
+  
+  Prepending PATH=/home/lsh9382/anaconda3/bin to PATH in /home/lsh9382/.bashrc
+  A backup will be made to: /home/lsh9382/.bashrc-anaconda3.bak
+  
+  
+  For this change to become active, you have to open a new terminal.
+  
+  Thank you for installing Anaconda3!
+  
+  Share your notebooks and packages on Anaconda Cloud!
+  Sign up for free: https://anaconda.org
+  ```
+
+  ```
+  source .bashrc  
+  
+  jupyter notebook --generate-config #주피터 노트북 설정 파일 생성
+  ```
+
+  ```
+  vi /home/lsh9382/.jupyter/jupyter_notebook_config.py #vi 편집기로 config 파일 열기   
+  ```
+
+  ```
+  c = get_config()
+  c.NotebookApp.ip = '*'
+  c.NotebookApp.open_browser = False
+  c.NotebookApp.port = 9999
+  c.NotebookApp.token = ''
+  ```
+
+  ```
+  jupyter-notebook --no-browser --port=9999  
+  jupyter lab --no-browser --port=9999
+  ```
+
+
+
+- 데이터 코드, 백테스팅, 트레이딩 전략(ex. WANN)    
+
   
 
-- 데이터 코드, 백테스팅, 트레이딩 전략(ex. WANN)  
-
-
-
-## ETC
+## ETC  
 
 - 파일 보내는 명령어 __rsync__   
 
