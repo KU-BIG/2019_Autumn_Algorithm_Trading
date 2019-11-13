@@ -184,3 +184,33 @@ performance를 올리다 보면 어쩔 수 없이 complexity가 증가하게 되
 
 
 
+
+
+
+
+
+
+
+
+__Reference__       
+
+[wann 정리 document 1](<https://towardsdatascience.com/weight-agnostic-neural-networks-fce8120ee829>)     
+
+[wann 정리 document 2](<https://weightagnostic.github.io/>)   
+
+[google AI document](<https://ai.googleblog.com/2019/08/exploring-weight-agnostic-neural.html?fbclid=IwAR3G6pvTEsFf-1AUSrIh1iCjnaOnzlQgRh9BSZjANjMMkZDApwx50SeEA-Y>)  
+
+[NEAT 위키피디아](<https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies>)   
+
+
+
+
+
+
+
+
+
+
+
+
+
