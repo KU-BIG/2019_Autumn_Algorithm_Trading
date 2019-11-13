@@ -54,6 +54,22 @@ __1. Architecture Search__
 
 논문 method는 NEAT, an established topology search algorithm에 근거하고 있음. -> weight랑 structure of networks를 동시에 optimize 시킬 수 있음   
 
+__cf) NEAT 알고리즘__  
+
+genetic algorithm의 일종인데, weight parameters와 structures of networks를 동시에 바꿀 수 있음  
+
+3가지 techniques에 근거하는데, 
+
+tracking genes with history markers to allow crossover among topologies     
+
+applying speciation (the evolution of species) to preserve innovations    
+
+developing topologies incrementally from simple initial structures ("complexifying")  
+
+
+
+
+
 
 
 #### 3 Weight Agnostic Neural Network Search  
@@ -66,11 +82,39 @@ NAS의 목적은 인간이 디자인한 architecture보다, __트레이닝 시__
 
 
 
-weight를 random distribution에서 얻어내는 것은, 특정 task의 performance가 오직 network topology 에 의한 것이라고 보장할 수 있음
-
-![](C:\Users\USER\Documents\GitHub\2019_Autumn_Algorithm_Trading\WANN\image8.png)  
+weight를 random distribution에서 얻어내는 것은, 특정 task의 performance가 오직 network topology 에 의한 것이라고 보장할 수 있음 
 
 
+
+
+
+__The Search for these weight agnostic neural networks(WANNs)__    
+
+
+
+![](C:\Users\USER\Documents\GitHub\2019_Autumn_Algorithm_Trading\WANN\image8.png)    
+
+1) An initial Population of minimal neural network topologies is created
+
+2) each network is evaluated over multiple rollouts, with a different shared weight value assigned to each rollout  
+
+3) networks are ranked according to their performance and __complexity__    
+
+4) new population is created by varing the highest ranked network topologies, chosen probabilistically through tournament selection   
+
+
+
+2)번부터 다시 알고리즘이 반복되며, 점차적으로 complexity랑 performance를 증가시킴.    
+
+
+
+__Topology Search__   
+
+네트워크 구조의 탐색에 관한 아이디어를 NEAT로부터 얻었음.   
+
+NEAT는 weight와 architecture를 동시에 optimize할 수 있는데, 본 논문에서는 weight를 무시하고 
+
+topological search operators에만 집중( architecture에만 집중했단 뜻 )    
 
 
 
