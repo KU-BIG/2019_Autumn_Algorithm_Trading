@@ -162,6 +162,35 @@ performance를 올리다 보면 어쩔 수 없이 complexity가 증가하게 되
 
 #### 4 Experiment Results       
 
+__Continuous Control__     
+
+WANN이 3가지 continuous control tasks에 의해서 평가가 되는데, 다음과 같다.
+
+- CarPoleSwingUp  
+
+  ![](CartPoleSwingUp.png)     
+
+  차가 트랙의 경계선을 넘지 않도록 운전. 
+
+- BipedalWalker - v2    
+
+  ![](BipedalWalker_v2.png)   
+
+  두 개의 다리를 가진 agent가 무작위로 생성된 지형 위를 걸어가는 것. reward는 agent가 travel한 distance가 됨. 
+
+- CarRacing - v0    
+
+  ![](CarRacing_v0.png)   
+
+  car은 3가지의 움직임을 할 수 있음 (gas, steer, brake) -> 정해진 시간 내에 무작위로 생성된 track에서 가능한 한 많은 tiles를 방문하는 것    
+
+  
+
+  Q: 여기서 pixel representation을 VAE를 통해 차원축소해서 16 latent dimensions로 합축한다고 했는데,
+
+  이게 "network의 input으로 들어간다" 고 되어있는 데 그게 이해가 안감. 무슨 소리?  
+
+  
 
 
 
@@ -169,12 +198,9 @@ performance를 올리다 보면 어쩔 수 없이 complexity가 증가하게 되
 
 
 
+weight의 범위가 (-2,2)인 이유는 3이상으로 되면 activation function에서 기울기가 0에 ㄱ까워져서 saturated 되고, 그 결과 여러 네트워크들이 비슷하게 perform하는 경향이 커진다고 함.  -> (-2, 2)구간 내에서 performance의 variance가 커짐.    
 
-
-
-
-
-
+100 random trials라는 건 U(-2, 2) 사이에서 100번 랜덤 샘플링 했다는 뜻인듯   
 
 
 
