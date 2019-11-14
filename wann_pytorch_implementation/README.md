@@ -1,4 +1,4 @@
-# Weight Agnostic Neural Networks PyTorch Implmentation
+# Weight Agnostic Neural Networks PyTorch Implementation
 
 
 
