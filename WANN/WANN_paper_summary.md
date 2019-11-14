@@ -168,19 +168,19 @@ WANN이 3가지 continuous control tasks에 의해서 평가가 되는데, 다�
 
 - CarPoleSwingUp  
 
-  ![](CartPoleSwingUp.png)     
+  ![](CartPoleSwingUp.png)       
 
   차가 트랙의 경계선을 넘지 않도록 운전. 
 
 - BipedalWalker - v2    
 
-  ![](BipedalWalker_v2.png)   
+  ![](BipedalWalker_v2.png)     
 
   두 개의 다리를 가진 agent가 무작위로 생성된 지형 위를 걸어가는 것. reward는 agent가 travel한 distance가 됨. 
 
 - CarRacing - v0    
 
-  ![](CarRacing_v0.png)   
+  ![](CarRacing_v0.png)      
 
   car은 3가지의 움직임을 할 수 있음 (gas, steer, brake) -> 정해진 시간 내에 무작위로 생성된 track에서 가능한 한 많은 tiles를 방문하는 것    
 
