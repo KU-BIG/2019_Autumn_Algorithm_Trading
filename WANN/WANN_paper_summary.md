@@ -188,7 +188,7 @@ WANN이 3가지 continuous control tasks에 의해서 평가가 되는데, 다�
 
   Q: 여기서 pixel representation을 VAE를 통해 차원축소해서 16 latent dimensions로 합축한다고 했는데,
 
-  이게 "network의 input으로 들어간다" 고 되어있는 데 그게 이해가 안감. 무슨 소리?  
+  이게 "network의 input으로 들어간다" 고 되어있는 데 그게 이해가 안감. 무슨 소리?   
 
   
 
@@ -203,6 +203,8 @@ weight의 범위가 (-2,2)인 이유는 3이상으로 되면 activation function
 100 random trials라는 건 U(-2, 2) 사이에서 100번 랜덤 샘플링 했다는 뜻인듯   
 
 
+
+__Classification__     
 
 
 

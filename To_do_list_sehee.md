@@ -44,8 +44,21 @@ __해야 할 일__
 
 ### WANN
 
-- [x] 관련논문 읽고정리  -> wann docks 읽는 것으로 대체  
-- [ ] gpu 서버에 세팅하기 ( git clone, jupyterlab 서버세팅 등)    
-- [ ] github 코드 튜토리얼  -> 근데 이 wann을 계속 쓸지 모르겠음   
-- [ ] WANN 대체 알고리즘 있는지 찾아보기  
+- [x] 관련논문 읽고정리  -> wann docks 읽는 것으로 대체    
+- [ ] gpu 서버에 세팅하기 ( git clone, jupyterlab 서버세팅 등)     
+- [ ] github 코드 튜토리얼  -> 근데 이 wann을 계속 쓸지 모르겠음    
+- [ ] WANN 대체 알고리즘 있는지 찾아보기     
+
+
+
+1. reproducing 해서, 논문에서 똑같은 세팅으로 하고  
+backpropagation을 적용했을 때 성능 차이가 얼마나 나는지 실험(with REINFORCE)  
+
+성능이 낮다 하면 activation function을 relu만 쓰거나 아니면 relu, sigmoid, tanh와 같은 일반적인 activation function을 썼을 때 어떻게 되는지 -> 성능차이랑 네트워크 사이즈가 너무 커지지는 않는지..(relu같은 거 쓰면 네트워크 complexity가 작아서 네트워크 사이즈가 커질 수 있다는 단점)  
+
+2. Visualization 코드도 짜야 -> 패키지 쓴다.     
+
+
+
+
 
