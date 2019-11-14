@@ -49,14 +49,30 @@ __해야 할 일__
 - [ ] github 코드 튜토리얼  -> 근데 이 wann을 계속 쓸지 모르겠음    
 - [ ] WANN 대체 알고리즘 있는지 찾아보기     
 
-
+__MNIST에 대해__   
 
 1. reproducing 해서, 논문에서 똑같은 세팅으로 하고  
-backpropagation을 적용했을 때 성능 차이가 얼마나 나는지 실험(with REINFORCE)  
+  backpropagation을 적용했을 때 성능 차이가 얼마나 나는지 실험(with REINFORCE)    
 
-성능이 낮다 하면 activation function을 relu만 쓰거나 아니면 relu, sigmoid, tanh와 같은 일반적인 activation function을 썼을 때 어떻게 되는지 -> 성능차이랑 네트워크 사이즈가 너무 커지지는 않는지..(relu같은 거 쓰면 네트워크 complexity가 작아서 네트워크 사이즈가 커질 수 있다는 단점)  
+  backpropagation이 잘 적용되지 않는다면 그 이유가 무엇일까? 잘 사용되지 않는 activation function(various actiavation) 때문에 optimization landscape가 발생한다고 document에 나와있음.   
 
-2. Visualization 코드도 짜야 -> 패키지 쓴다.     
+  
+
+  - 논문에서 사용한것처럼 다양한 activation사용하면서 backprop -> 논문에서 제시된 1~4 (random weight, .., ..., fine-tune)과 비교 -> 성능이 얼마나 떨어지는지
+  - ReLU만 사용해서 MNIST에 대한 best topology 찾고, backprop으로 fine tune -> 논문에서 제시한 성능이랑 얼마나 차이나는지 + params. 가 얼마나 차이나는지
+  - Gradient Vanshing을 크게 일으킬것으로 기대되는 activation빼고 사용하여 위와 같은 방법으로 비교
+
+
+
+성능이 낮다 하면 activation function을 relu만 쓰거나 아니면 relu, sigmoid, tanh와 같은 일반적인 activation function을 썼을 때 어떻게 되는지 -> 성능차이랑 네트워크 사이즈가 너무 커지지는 않는지..(relu같은 거 쓰면 네트워크 complexity가 작아서 네트워크 사이즈가 커질 수 있다는 단점)   
+
+2. Visualization -> pytorch에서 제공하는 메소드 쓸듯.(예쁘진 않음)         
+
+
+
+
+
+
 
 
 

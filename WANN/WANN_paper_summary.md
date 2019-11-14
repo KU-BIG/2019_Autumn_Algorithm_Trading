@@ -162,7 +162,7 @@ performance를 올리다 보면 어쩔 수 없이 complexity가 증가하게 되
 
 #### 4 Experiment Results       
 
-__Continuous Control__     
+__Continuous Control__      
 
 WANN이 3가지 continuous control tasks에 의해서 평가가 되는데, 다음과 같다.
 
@@ -204,7 +204,11 @@ weight의 범위가 (-2,2)인 이유는 3이상으로 되면 activation function
 
 
 
+
+
 __Classification__     
+
+
 
 
 
