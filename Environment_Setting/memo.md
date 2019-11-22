@@ -117,7 +117,7 @@ gpu instance - kubig wiki 보고 했음
 
 ## GPU 서버 내 파이썬 환경 세팅
 
-- Jupyter lab 사용가능한 환경 만들기    
+- <s>Jupyter lab 사용가능한 환경 만들기</s>        
 
   
 
@@ -188,7 +188,18 @@ gpu instance - kubig wiki 보고 했음
 
 - 데이터 코드, 백테스팅, 트레이딩 전략(ex. WANN)    
 
+
+
+
+- Docker 이미지에서 이미 주피터 노트북을 세팅해 줬으므로 위의 과정이 필요 없음   
+
+  ```
+  jupyter lab --ip=0.0.0.0 --port=9999 --NotebookApp.token='' --allow-root
+  ```
+
   
+
+  ​	
 
 ## ETC  
 
