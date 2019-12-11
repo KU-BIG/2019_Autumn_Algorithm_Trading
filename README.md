@@ -1,5 +1,11 @@
 # 2019_Autumn_Algorithm_Trading
 
+## Abstract
+Finedust data may predict following companies' performance
+- Electric Car
+- Air Cleaner
+- and so on..
+
 ## Slides
 - [최종발표](https://github.com/KU-BIG/KUBIG_2019_Autumn/blob/master/projects/Week10/Algorithm_Trading_1205.pdf)
 
